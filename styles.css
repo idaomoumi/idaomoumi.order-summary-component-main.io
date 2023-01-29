@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 28rem;
+  background: white;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+.title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.text-content {
+  padding: 7%;
+  text-align: center;
+}
+.text-content p.subtitle {
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 1.5rem;
+}
+.plan-box {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.75rem;
+  display: flex;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.plan-box-left {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.plan-box-left div {
+  margin-left: 1.25rem;
+}
+.plan-box-left div h5 {
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: hsl(223, 47%, 23%);
+}
+.plan-box-left div p {
+  font-size: 0.85rem;
+  color: hsl(224, 23%, 55%);
+}
+.plan-box a {
+  font-weight: 900;
+  color: hsl(245, 75%, 52%);
+}
+a.proceed-btn {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  padding: 1.25rem 0;
+  border-radius: 0.75rem;
+  margin: 1.87rem 0;
+  box-shadow: 0px 1rem 1rem hsla(245, 75%, 52%, 0.259);
+}
+a.cancel-btn {
+  color: hsl(245, 75%, 52%);
+  text-decoration: none;
+  font-weight: 900;
+}
+.plan-box a:hover {
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.689);
+  transition: color 0.2s ease;
+}
+a.proceed-btn:hover {
+  background-color: hsla(245, 75%, 52%, 0.689);
+  transition: background-color 0.2s ease;
+}
+a.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+  transition: color 0.2s ease;
+}
+@media only screen and (max-width: 420px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    font-size: 0.87rem;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .container {
+    max-width: 85%;
+  }
+  div.plan-box {
+    padding: 0.75rem;
+  }
+  .plan-box-left div {
+    margin-left: 0.6rem;
+  }
+  a.proceed-btn,
+  a.cancel-btn,
+  .plan-box a {
+    font-size: 0.75rem;
+  }
+  .text-content {
+    padding: 9% 7%;
+  }
+  .hero {
+    /* Sizing */
+    width: 100vw;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+  }
+}
